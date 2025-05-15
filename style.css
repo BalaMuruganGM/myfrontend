@@ -3,14 +3,15 @@
     margin: 0px;
     box-sizing: border-box;
     /* font-family: "Plus Jakarta Sans", sans-serif; */
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Roboto", sans-serif;
     /* overflow: hidden; */
     
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
 .container{
     /* background: linear-gradient(to right, #141652, #305297); */
@@ -28,7 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 nav{
@@ -46,8 +47,8 @@ nav{
 }
 
 nav .navLogo{
-    width: 140px;
-    height: 50px;
+    width: 130px;
+    height: 40px;
     padding-top: 5px;
 }
 
@@ -69,6 +70,7 @@ nav .navLogo{
     text-decoration: none;
     color: black;
     font-weight: 700;
+    font-size:20px;
 }
 
 
@@ -347,7 +349,6 @@ nav .navLogo{
         min-height: 70vh;
         position: relative;
         overflow: hidden;
-        background-color: red;
     }
 
     .LogoScroll{
@@ -522,7 +523,6 @@ nav .navLogo{
         padding: 20px 6%;
         display: grid;
         gap: 50px;
-
         grid-template-columns: auto auto auto auto auto;
     }
 
@@ -745,15 +745,14 @@ nav .navLogo{
 
     .rightHead h1{
         font-size: 22px;
-        color: blue;        
+        color: blue;
     }
 
     .rightBody h1{
-        font-size: 22px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        letter-spacing: -1px;
-         
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing:-1px;
+        word-spacing: -3px;                 
     }
 
     .rightBody{
@@ -1025,7 +1024,9 @@ section{
     background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
     padding: 30px 0px 10px;
     transition:0.5s ease;
-    border-top: 5px solid #1416520d;}
+    border-top: 5px solid #1416520d;
+    overflow: hidden;   /*Intha overflow animation erukkurathunala eaottha problem*/
+}
 
 .sectionHead{
     text-align: center;
@@ -1890,7 +1891,7 @@ section{
 
 
 
-     @media screen and (max-width:550px) {
+     /* @media screen and (max-width:550px) {
         .LogoOption{
             width:98%;
             padding: 0px 10px;
@@ -1941,9 +1942,9 @@ section{
         }
 
      }
+ */
 
-
-     @media screen and (max-width:450px) {
+     /* @media screen and (max-width:450px) {
         .LogoOption{
             width:98%;
             padding: 0px 10px;
@@ -1951,7 +1952,7 @@ section{
         }
 
         .LpopularBody , .LpopularScroll , .Lpopular{
-            height:50vh;
+            height:40vh;
            }
 
         .LpopularBody{
@@ -1960,10 +1961,10 @@ section{
         }
     
         .LogoOption button{
-            padding:0px;
+            padding:3px;
             height: 30px;
             width: 70px;
-            font-size:8px;
+            font-size:10px;
         }
 
         .LpopularBody a{
@@ -1976,9 +1977,9 @@ section{
             gap: 20px;
         }
 
-     }
+     } */
 
-     @media screen and (max-width:400px) {
+     /* @media screen and (max-width:400px) {
         .LpopularBody a{
             width: 120px;
             height: 50px;
@@ -1986,9 +1987,65 @@ section{
         }
 
         .LpopularBody , .LpopularScroll , .Lpopular{
-            height:45vh;
+            height:40vh;
         }
      }
-
+ */
     
+ .resLogo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+ }
+
+ .resLogoBox-1{
+    display: flex;
+    width:70%;
+    justify-content: space-around;
+ }
+
+
+   .pulliTagTwo{
+        display:none;
+    }
+    .resLogo{
+        display: none;
+    }
+
+@media screen and (max-width:550px) {
+    .Logos{
+        display: none;
+    }
+
+    .pulliTag{
+        display: none;
+    }
+
+    .pulliTagTwo{
+        display: flex;
+    }
+    .resLogo{
+        display: none;
+    }
+
+    .resLogo-1{
+        display: flex;
+    }
+
+    .Logos-1{
+        width: 220px;
+        height:140px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .resLogoBox-1{
+        width: 90%;
+    }
+}
+
 /* Logo Page Responsive closes

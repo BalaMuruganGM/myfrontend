@@ -160,39 +160,54 @@ function LogoRight(){
 
 
 
-function pulli1(){
-    document.querySelector('.LogoScroll').style.left = 0+"%"
-    document.querySelector('.pulli-2').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-3').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-4').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-1').style.backgroundColor = "blue";
+function pulliTag1(){
+    document.querySelector('.resLogo-2').style.display="none";
+    document.querySelector('.resLogo-3').style.display="none";
+    document.querySelector('.resLogo-4').style.display="none";
+    document.querySelector('.resLogo-1').style.display="flex";
+    document.querySelector('.pulliTag-2').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-3').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-4').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-1').style.backgroundColor = "blue";
 
 }
 
 
-function pulli2(){
-    document.querySelector('.LogoScroll').style.left = -25+"%"
-    document.querySelector('.pulli-1').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-3').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-4').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-2').style.backgroundColor = "blue";
+function pulliTag2(){
+    document.querySelector('.resLogo').style.display="none";
+    document.querySelector('.resLogo-1').style.display="none";
+    document.querySelector('.resLogo-3').style.display="none";
+    document.querySelector('.resLogo-4').style.display="none";
+    document.querySelector('.resLogo-2').style.display="flex";
+    document.querySelector('.pulliTag-1').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-3').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-4').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-2').style.backgroundColor = "blue";
 }
 
-function pulli3(){
-    document.querySelector('.LogoScroll').style.left = -50+"%"
-    document.querySelector('.pulli-1').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-2').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-4').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-3').style.backgroundColor = "blue";
+function pulliTag3(){
+    document.querySelector('.resLogo').style.display="none";
+    document.querySelector('.resLogo-1').style.display="none";
+    document.querySelector('.resLogo-2').style.display="none";
+    document.querySelector('.resLogo-4').style.display="none";       
+    document.querySelector('.resLogo-3').style.display="flex";
+    document.querySelector('.pulliTag-1').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-2').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-4').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-3').style.backgroundColor = "blue";
 
 }
 
-function pulli4(){
-    document.querySelector('.LogoScroll').style.left = -75+"%"
-    document.querySelector('.pulli-1').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-2').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-3').style.backgroundColor = "#fff";
-    document.querySelector('.pulli-4').style.backgroundColor = "blue";
+function pulliTag4(){
+    document.querySelector('.resLogo').style.display="none";
+    document.querySelector('.resLogo-1').style.display="none";
+    document.querySelector('.resLogo-2').style.display="none";
+    document.querySelector('.resLogo-3').style.display="none";
+    document.querySelector('.resLogo-4').style.display="flex";
+    document.querySelector('.pulliTag-1').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-2').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-3').style.backgroundColor = "#fff";
+    document.querySelector('.pulliTag-4').style.backgroundColor = "blue";
 }
 
 // Logos page clouses
