@@ -650,10 +650,9 @@ nav .navLogo{
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        justify-content:end;
-        gap: 30px;
+        justify-content:space-between;
+        /* gap: 30px; */
         border: 1px solid lightgray;
-        position: relative;
         padding-bottom:25px;
     }
 
@@ -663,8 +662,7 @@ nav .navLogo{
         display: flex;
         overflow: hidden;
         position:relative;
-        /* left: 0;
-        top: 0; */
+        /* top: 0;  */
     }
 
     .rightImgTag img{
@@ -672,7 +670,7 @@ nav .navLogo{
         height: 100%;
         position: absolute;
         left: 0;
-        top: 0;
+        top:0px;
     }
 
     .rightFirstImg{
@@ -1526,311 +1524,390 @@ nav .navLogo{
 
 /* Logo Page Responsive Start */
 
-@media screen and (max-width:1300px) {
-    .Lseats{
-        width: 90%;
-        gap: 10px;
+    @media screen and (max-width:1300px) {
+        .Lseats{
+            width: 90%;
+            gap: 10px;
+        }
+
+        .rightTag{
+            width: 290px;
+        }
+
+
+
     }
 
-    .rightTag{
-        width: 290px;
+
+    @media screen and (max-width:1250px) {
+        .Logos-1{
+            width: 200px;
+            height:120px;
+            justify-content:center;
+            gap: 30px;
+        }
+
+        .LPrice{
+            grid-template-columns: auto auto auto auto;
+        }
+
     }
 
 
 
-}
+    @media screen and (max-width:1150px) {
 
+        .LpopularBody-1 , .LpopularBody-2{
+            justify-content:center;
+        }
 
-@media screen and (max-width:1250px) {
-    .Logos-1{
-        width: 200px;
-        height:120px;
-        justify-content:center;
-        gap: 30px;
     }
 
-    .LPrice{
-        grid-template-columns: auto auto auto auto;
+
+    @media screen and (max-width:1100px) {
+        .Lseats a{
+            width: 150px;
+            height: 70px;
+            font-size: 18px;
+        }
     }
 
-}
+
+    @media screen and (max-width:1000px) { 
+        .LogoScroll{
+            min-height: 80vh;
+            /* top: 10px; */
+            margin-top: 10px;
+            z-index: 1000;
+        }
+
+        .LogoPage{
+            width: 100%;
+            border-radius: 0px;
+            gap: 30px;
+        }
+
+        .LPrice{
+            grid-template-columns:auto auto auto;
+        }
+
+        .Logos-1{
+            justify-content:space-evenly;
+            gap: 15px;
+            width: 180px;
+            height: 140px;
+        }
+
+        .Logos-1 img{
+            width: 40%;
+            height: 40%;
+        }
+
+        .LpopularBody a{
+            width: 150px;
+            height: 80px;
+            font-size: 15px;
+        }
+
+        .Lpopular{
+            height: 250px;
+        }
+
+        .Lbody{
+            grid-template-columns: auto auto auto;
+            justify-content:space-around;
+        }
+
+     }
+
+     @media screen and (max-width:900px) {
+        
+        .LogoPage{
+            margin-bottom: 0px;
+        }
+      
+        .LpopularArrow{
+            display: none;
+        }
+
+
+       .LpopularBody , .LpopularScroll , .Lpopular{
+        height: 150px;
+       }
+ 
+        .LpopularBody{
+            align-items: center;
+            row-gap: 10px;
+        }
+
+        .LpopularBody a{
+            width: 120px;
+            height: 60px;
+            font-size: 12px;
+        }
+
+        .Lpopular{
+            height: 170px;
+        }
+
+        .Lseats{
+            grid-template-columns:auto auto auto;
+            row-gap: 50px;
+            justify-content: space-around;
+        }
+
+
+        .Logos-1{
+            /* justify-content:space-evenly; */
+            gap: 15px;
+            width: 150px;
+            height: 100px;        }
+
+       .LogoScrollTag , .Logos , .LogoScroll{
+            min-height:50vh;
+       }
+
+       .Logos{
+        margin: 10px 0px;
+       }
+
+
+     }
+
+     
+     @media screen and (max-width:800px) {
+        .LogoPage{
+            gap: 25px;
+        }
+     }
+
+
+     @media screen and (max-width:700px) {
+        .LogoOption{
+            width:95%;
+        }
+    
+        .LogoOption button{
+            padding:5px 10px;
+            height: 40px;
+            width: 100px;
+            font-size: 12px;
+        }
+
+        .LogoPage{
+            gap: 20px;
+        }
+
+        .LpopularBody a{
+            width: 160px;
+            height: 90px;
+            font-size: 16px;
+        }
+
+        .LpopularBody , .LpopularScroll , .Lpopular{
+            /* height:85vh; */
+           }
+
+        .LpopularBody{
+            grid-template-columns: auto auto;
+            row-gap:15px;
+            gap: 15x;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .LPrice{
+            grid-template-columns:auto auto;
+            justify-content: center;
+            gap: 20px;
+        }
+     }
+
+
+     @media screen and (max-width:800px){
+        .Logos-1{
+            /* justify-content:space-evenly; */
+            gap: 15px;
+            width: 120px;
+            height: 100px;
+        }
+
+     }
+
+     @media screen and (max-width:700px){
+        .Logos{
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .LogoScrollTag , .Logos , .LogoScroll{
+            min-height:60vh;
+            margin: 0px 10px;
+            justify-content: center;
+            align-items: center;
+       }
 
 
 
-@media screen and (max-width:1150px) {
-
-    .LpopularBody-1 , .LpopularBody-2{
-        justify-content:center;
-    }
-
-}
+       .LogoArrow{
+        display:none;
+       }
+     }
 
 
-@media screen and (max-width:1100px) {
-    .Lseats a{
-        width: 150px;
-        height: 70px;
-        font-size: 18px;
-    }
-}
+     @media screen and (max-width:600px) {
+        .Lbody{
+            justify-content:space-between;
+        }
+
+        .Lseats{
+            grid-template-columns:auto auto;
+            gap: 30px;
+            justify-content:center;
+        }
+
+     }
 
 
-@media screen and (max-width:1000px) { 
-    .LogoScroll{
-        min-height: 80vh;
-        /* top: 10px; */
-        margin-top: 10px;
-        z-index: 1000;
-    }
 
-    .LogoPage{
-        width: 100%;
-        border-radius: 0px;
-        gap: 30px;
-    }
+     @media screen and (max-width:550px) {
+        .LogoOption{
+            width:98%;
+            padding: 0px 10px;
+        }
+    
+        .LogoOption button{
+            padding:5px 10px;
+            height: 35px;
+            width: 80px;
+            font-size: 10px;
+        }
 
-    .LPrice{
-        grid-template-columns:auto auto auto;
-    }
+        
+        .Lbody{
+            grid-template-columns:auto auto;
+            justify-content: center;
+            column-gap: 50px;
+        }
 
-    .Logos-1{
-        justify-content:space-evenly;
-        gap: 15px;
-        width: 180px;
-        height: 140px;
-    }
+        .Lbody-1{
+            width: 100px;
+        }
 
-    .Logos-1 img{
-        width: 40%;
-        height: 40%;
-    }
+        .Lbody-1 p{
+            font-size: 13px;
+        }
 
-    .LpopularBody a{
-        width: 150px;
-        height: 80px;
-        font-size: 15px;
-    }
+        .Lbody-1 img{
+            width:100%;
+            height:60px;
+        }
 
-    .Lpopular{
-        height: 250px;
-    }
+     }
 
-    .Lbody{
-        grid-template-columns: auto auto auto;
-        justify-content:space-around;
-    }
 
+     @media screen and (max-width:450px) {
+        .LogoOption{
+            width:98%;
+            padding: 0px 10px;
+            gap: 10px;
+        }
+
+        .LpopularBody , .LpopularScroll , .Lpopular{
+            height:35vh;
+           }
+
+        .LpopularBody{
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .LogoOption button{
+            padding:3px;
+            height: 30px;
+            width: 70px;
+            font-size:10px;
+        }
+
+        .LpopularBody a{
+            width: 130px;
+            height: 60px;
+            font-size: 13px;
+        }
+
+        .Lseats{
+            gap: 20px;
+        }
+
+     }
+
+     @media screen and (max-width:400px) {
+        .LpopularBody a{
+            width: 120px;
+            height: 50px;
+            font-size: 10px;
+        }
+
+        .LpopularBody , .LpopularScroll , .Lpopular{
+            height:35vh;
+        }
+     }
+
+    
+ .resLogo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
  }
 
- @media screen and (max-width:900px) {
-    .LpopularArrow{
+ .resLogoBox-1{
+    display: flex;
+    width:70%;
+    justify-content: space-around;
+ }
+
+
+   .pulliTagTwo{
+        display:none;
+    }
+    .resLogo{
         display: none;
     }
 
-    .LpopularBody a{
-        width: 120px;
-        height: 60px;
-        font-size: 12px;
-    }
-
-    .Lpopular{
-        height: 170px;
-    }
-
-    .Lseats{
-        grid-template-columns:auto auto auto;
-        row-gap: 50px;
-        justify-content: space-around;
-    }
-
-
- }
-
- 
- @media screen and (max-width:800px) {
-    .LogoPage{
-        gap: 25px;
-    }
- }
-
-
- @media screen and (max-width:700px) {
-    .LogoOption{
-        width:95%;
-    }
-
-    .LogoOption button{
-        padding:5px 10px;
-        height: 40px;
-        width: 100px;
-        font-size: 12px;
-    }
-
-    .LogoPage{
-        gap: 20px;
-    }
-
-    .LpopularBody a{
-        width: 160px;
-        height: 90px;
-        font-size: 16px;
-    }
-
-    .Lpopular{
-        min-height:90vh;
-    }
-
-    .LpopularBody{
-        grid-template-columns: auto auto;
-    }
-
-    .LPrice{
-        grid-template-columns:auto auto;
-        justify-content: center;
-        gap: 20px;
-    }
- }
-
-
- @media screen and (max-width:900px) {
-    .Logos-1{
-        /* justify-content:space-evenly; */
-        gap: 15px;
-        width: 150px;
-        height: 100px;
-    }
-
-   .LogoScrollTag , .Logos , .LogoScroll{
-        min-height:50vh;
-   }
-
-   .Logos{
-    margin: 10px 0px;
-   }
-
- }
-
-
- @media screen and (max-width:800px){
-    .Logos-1{
-        /* justify-content:space-evenly; */
-        gap: 15px;
-        width: 120px;
-        height: 100px;
-    }
-
- }
-
- @media screen and (max-width:700px){
+@media screen and (max-width:550px) {
     .Logos{
-        grid-template-columns: auto auto;
+        display: none;
     }
 
-    .LogoScrollTag , .Logos , .LogoScroll{
-        min-height:100vh;
-   }
-
-   .LogoArrow{
-    display:none;
-   }
- }
-
-
- @media screen and (max-width:600px) {
-    .Lbody{
-        justify-content:space-between;
+    .pulliTag{
+        display: none;
     }
 
-    .Lseats{
-        grid-template-columns:auto auto;
-        gap: 30px;
-        justify-content:center;
+    .pulliTagTwo{
+        display: flex;
+    }
+    .resLogo{
+        display: none;
     }
 
- }
-
-
-
- @media screen and (max-width:550px) {
-    .LogoOption{
-        width:98%;
-        padding: 0px 10px;
+    .resLogo-1{
+        display: flex;
     }
 
-    .LogoOption button{
-        padding:5px 10px;
-        height: 35px;
-        width: 80px;
-        font-size: 10px;
+    .Logos-1{
+        width: 220px;
+        height:140px;
+        font-size: 15px;
     }
 
-    .LogoPage{
-        gap:15px;
+}
+
+@media screen and (max-width:400px) {
+    .resLogoBox-1{
+        width: 90%;
     }
-
-    .Lbody{
-        grid-template-columns:auto auto;
-        justify-content: center;
-        column-gap: 50px;
-    }
-
-    .Lbody-1{
-        width: 100px;
-    }
-
-    .Lbody-1 p{
-        font-size: 13px;
-    }
-
-    .Lbody-1 img{
-        width:100%;
-        height:60px;
-    }
-
- }
-
-
- @media screen and (max-width:450px) {
-    .LogoOption{
-        width:98%;
-        padding: 0px 10px;
-        gap: 10px;
-    }
-
-    .Lpopular{
-        min-height:65vh;
-    }
-
-    .LpopularBody{
-        align-items: center;
-        gap: 10px;
-    }
-
-    .LogoOption button{
-        padding:0px;
-        height: 30px;
-        width: 70px;
-        font-size:8px;
-    }
-
-    .LpopularBody a{
-        width: 130px;
-        height: 60px;
-        font-size: 13px;
-    }
-
-    .Lseats{
-        gap: 20px;
-    }
-
- }
-
- @media screen and (max-width:400px) {
-    .LPrice a{
-        width: 140px;
-        height: 75px;
-    }
- }
-
+}
 
 /* Logo Page Responsive closes

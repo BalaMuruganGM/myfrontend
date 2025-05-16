@@ -309,3 +309,24 @@ function HLSeats(){
 
 
 
+// Nav Script Start
+
+document.querySelector('.resHome').addEventListener('click', () => {
+    location.href = "./index.html";
+});
+
+document.querySelector('.resAbout').addEventListener('click', () => {
+    location.href = "./about.html";
+});
+
+
+document.querySelector('.resContact').addEventListener('click', () => {
+    location.href = "./contact.html";
+});
+
+document.querySelector('.resUse').addEventListener('click', () => {
+    location.href = "./Listing.html";
+});
+
+
+// Nav Script Clouses 

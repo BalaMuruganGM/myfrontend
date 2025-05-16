@@ -95,6 +95,7 @@ nav .navLogo{
     position: absolute;
     top:60px;
     left:-100%;
+    z-index: 1000;
     transition: all 0.30s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -245,34 +246,29 @@ nav .navLogo{
     align-items:start;
     padding: 0px 2%;
     margin-top:5%;
-
 }
 
 .leftViewContent{
-    display: grid;
-    gap: 30px;
-    width: 40%;
-    min-height: 20%;
-    /* background-color: red; */
-    /* background-color: yellow; */
+    height: 230px;
+    display: flex;
+    flex-direction:column;
+    gap:30px;
 }
 
-.leftViewContent h1{
+
+
+.leftViewContent h3{
     font-size: 25px;
 }
 
-.Rate{
-    width:50%;
-    display: flex;
-    justify-content: space-between;
+.leftViewContent p{
+    font-size:18px;
 }
 
-
-.KM{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+.LVCDbottom{
+    margin-top: 10px;
 }
+
 
 .rightViewBox{
     background: linear-gradient(to left, #0038A7, #141652);
@@ -292,6 +288,8 @@ nav .navLogo{
     justify-content: space-between;
     color: #fff;
     width: 100%;
+    border: unset;
+    border-radius: 5px;
 }
 
 .rvBoxHeadImg{
@@ -367,6 +365,8 @@ nav .navLogo{
     border-radius: 25px;
 
 }
+
+
 .LVCD{
     display: grid;
     gap: 10px;
@@ -381,28 +381,25 @@ nav .navLogo{
     justify-content: space-between;
 }
 
-.LVCDbottom{
-    margin-top: 20px;
-}
-
 .LVCDbottom-1 , .LVCDbottom-2 , .LVCDbottom-3{
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: center;
+    color: gray;
 }
 
 .LVCD-2 h1{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 
 /* ViewBody Start */
 
     .viewBody{
+        margin-top: -40px;
         display: flex;
         justify-content:start;
-        margin-top: -30px;
         width: 100%;
         padding: 10px;
     }
@@ -447,8 +444,9 @@ nav .navLogo{
     /* feature Tag Start */
 
     .cutomerFeatureH1{
-        margin-top: 40px;
+        margin: 40px 0px 20px 10px;
         width: 100%;
+
     }
 
     .cutomerFeature{
@@ -530,6 +528,16 @@ nav .navLogo{
     
     .viewBottom{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        gap: 10px; 
+    }
+
+    .viewBottom h1{
+        width: 100%;
+        text-align: start;
+        padding: 0px 15px;
     }
 
     .bottomBody{
@@ -543,68 +551,132 @@ nav .navLogo{
     }
 
     .rightTag{
-        width:250px;
-        height: 280px;
+        width:310px;
+        height:305px;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        justify-content:end;
+        justify-content:space-between;
         gap: 30px;
         border: 1px solid lightgray;
         position: relative;
-        padding-bottom:20px;
+        padding-bottom:25px;
     }
 
     .rightImgTag{
         width:400%;
-        height: 60%;
+        height: 70%;
         display: flex;
         overflow: hidden;
-        position:absolute;
-        left: 0;
-        top: 0;
+        position:relative;
+        /* left: 0;
+        top: 0; */
     }
 
     .rightImgTag img{
         width:25%;
         height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 
+    .rightFirstImg{
+        z-index: 10;
+    }
 
+    
     .righTagContent{
         display: flex;
+        flex-direction: column;
         width: 100%;
-        justify-content: space-between;
+        gap: 10px;
+        /* justify-content: space-between; */
         padding: 0px 10px;
     }
 
     .rightC , .LeftC{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+        justify-content:space-between;
         gap: 10px;
+    }
+
+    .rightC .CN{
+        font-size: 16px;
+        /* font-weight: bold;         */
+        color:#1D1C26;
+        font-size: 18px;
+    }
+
+
+    .rightC .rRS{
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .LeftC{
+        justify-content:start;
+        gap:10px;
+        font-size: 12px;
+        color:gray;
+    }
+
+    .rMonth{
+        margin-left: 15px;
     }
 
     .rightC p{
         color:#1C1D26;
-        font-size:12px;
+        font-size:14px;
         font-weight: 400px;
     }
 
     .leftC p{
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         color: #1C1D26;
     }
+
+    .LeftC{
+        font-size: 15px;
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        gap: 10px;
+        color: gray;
+    }
+
 
     .LeftC .leftCHead-1{
         font-size: 13px;
         font-weight: 700;
     }
 
-/* ViewBottom Clouses */
+    .bottomButton{
+        width: 150px;
+        height: 45px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        border: unset;
+        border-radius: 20px;
+        background-color:navy;
+    }
 
+    .bottomButton a{
+        text-decoration: none;
+        color: #fff;
+        
+    }
 
+    
+.formInformation{
+    display: none;
+}
+
+/* viewPage is clouses */
 /* Responsive start */
 
 
@@ -636,11 +708,7 @@ nav .navLogo{
     .ViewContent{
         flex-direction: column;
         align-items:center;
-        justify-content: space-between;
         gap: 30px;
-        min-height: 100vh;
-        gap: 10px;
-        margin-bottom: 10px;
     }
 
     .leftViewContent{
@@ -657,6 +725,10 @@ nav .navLogo{
 
     .viewImg{
         height: 280px;
+    }
+
+    .type-1, .type-2 {
+        width:80%;
     }
 
 }
@@ -731,13 +803,6 @@ nav .navLogo{
         height: 200px;
     }
 
-    .ViewContent{
-        min-height:95vh;
-    }
-
-    .type-1, .type-2 {
-        width: 80%;
-    }
 
 }
 
@@ -759,6 +824,7 @@ nav .navLogo{
         font-size: 18px;
     }
 
+
   
     .LVCD-1 h1{
         font-size: 17px;
@@ -775,11 +841,6 @@ nav .navLogo{
 
     .viewImg{
         height:180px;
-    }
-
-    .ViewContent{
-        min-height:85vh;
-        margin-bottom: 20px;
     }
 
     .type-1, .type-2 {
@@ -800,6 +861,12 @@ nav .navLogo{
         width: 320px;
         height: 160px;
     }
+
+    .ViewContent{
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
 
     .rightViewContent{
         min-height: 200px;
@@ -847,7 +914,7 @@ nav .navLogo{
     }
     
     .leftViewContent{
-        height: 170px;
+        height: 140px;
     }
 
     .cutomerFeatureH1{
@@ -864,11 +931,6 @@ nav .navLogo{
 
     .viewImg{
         height: 160px;
-    }
-
-    .ViewContent{
-        min-height:75vh;
-        
     }
 
 }
@@ -894,6 +956,11 @@ nav .navLogo{
 
     .leftViewContent{
         gap: 10px;
+    }
+
+        .ViewContent{
+        gap: 10px;
+        margin-bottom: 25px;
     }
 
 
@@ -1063,6 +1130,7 @@ nav .navLogo{
         line-height:14px;
     }
 }
+
 /* footer Responsive clouses */
 /* footer page clouses */
 /* Footer Page is Clouses */
