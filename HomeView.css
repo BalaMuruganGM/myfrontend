@@ -818,6 +818,12 @@ nav .navLogo{
         height: 160px;
     }
 
+    .ViewContent{
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+
     .rightViewContent{
         min-height: 200px;
     }
@@ -864,7 +870,7 @@ nav .navLogo{
     }
     
     .leftViewContent{
-        height: 170px;
+        height: 140px;
     }
 
     .cutomerFeatureH1{
@@ -906,6 +912,11 @@ nav .navLogo{
 
     .leftViewContent{
         gap: 10px;
+    }
+
+        .ViewContent{
+        gap: 10px;
+        margin-bottom: 25px;
     }
 
 
