@@ -245,7 +245,7 @@ nav .navLogo{
 .listHead p{
     width: 100%;
     /* height: 120px;    */
-    /* background-color: red; */
+    background-color: red;
     font-size: 18px;
     line-height: 26px;
 }
@@ -1123,7 +1123,7 @@ nav .navLogo{
         }
 
         .listHead{
-            min-height: 35vh;
+            height: 35vh;
         }
 
         .listScroll{
@@ -1301,7 +1301,7 @@ nav .navLogo{
     }
 
     .listHead{
-        height:38vh;
+        height:30vh; /*Mobile view kka change pannirukken*/
     }
 
 
@@ -1331,7 +1331,7 @@ nav .navLogo{
     }
 
     .listHead{
-        height:38vh;
+        height:28vh; /*Mobile viewkka change pannirukken*/
     }
 
 
@@ -1414,8 +1414,7 @@ nav .navLogo{
 
     .footerLogos{
         display: flex;
-        font-size: 10px;
-        font-weight: 600;
+        font-size: 15px;
     }
 
 
