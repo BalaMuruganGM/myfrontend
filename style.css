@@ -1342,7 +1342,6 @@ section{
         .rightPrice{
             display: grid;
             grid-template-columns: auto auto;
-            overflow: hidden;
         }
 
 
@@ -1989,9 +1988,12 @@ section{
  }
 
 
+
+ 
    .pulliTagTwo{
         display:none;
     }
+
     .resLogo{
         display: none;
     }
