@@ -1891,7 +1891,7 @@ section{
 
 
 
-     /* @media screen and (max-width:550px) {
+     @media screen and (max-width:550px) {
         .LogoOption{
             width:98%;
             padding: 0px 10px;
@@ -1904,24 +1904,7 @@ section{
             font-size: 10px;
         }
 
-        .LogoPage{
-            gap:15px;
-        }
-
-
-        .LogoScrollTag , .Logos , .LogoScroll{
-            min-height:73vh;
-        }
         
-        
-        .Logos{
-                grid-template-columns: auto auto;
-                gap: 10px;
-                justify-content: center;
-                align-items:center  ;
-            }
-
-
         .Lbody{
             grid-template-columns:auto auto;
             justify-content: center;
@@ -1942,9 +1925,9 @@ section{
         }
 
      }
- */
 
-     /* @media screen and (max-width:450px) {
+
+     @media screen and (max-width:450px) {
         .LogoOption{
             width:98%;
             padding: 0px 10px;
@@ -1977,9 +1960,9 @@ section{
             gap: 20px;
         }
 
-     } */
+     }
 
-     /* @media screen and (max-width:400px) {
+     @media screen and (max-width:400px) {
         .LpopularBody a{
             width: 120px;
             height: 50px;
@@ -1990,7 +1973,7 @@ section{
             height:40vh;
         }
      }
- */
+
     
  .resLogo{
     display: flex;

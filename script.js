@@ -212,6 +212,8 @@ function pulliTag4(){
 
 // Logos page clouses
 
+// LogoOption Start
+
 function make(){
     document.querySelector('.Lpopular').style.display = "none";
     document.querySelector('.LPrice').style.display = "none";
@@ -225,7 +227,8 @@ function make(){
     document.querySelector('.LpriceBut').style.cssText = "border: 1px solid gray; color:black;";
     document.querySelector('.HLBodyBut').style.cssText = "border: 1px solid gray; color:black;";
     document.querySelector('.HLseats').style.cssText = "border: 1px solid gray; color:black;";
-
+    document.querySelector('.pulliTagTwo').style.display = "flex";
+    document.querySelector('.pulliTag').style.display = "none";
 
 }
 
@@ -238,13 +241,12 @@ function HLpopular(){
     document.querySelector('.LogoScrollTag').style.display = "none";
     document.querySelector('.LogoArrow').style.display = "none";
     document.querySelector('.pulliTag').style.display = "none";
-
     document.querySelector('.makeBut').style.cssText = "border: 1px solid gray; color:black;";
     document.querySelector('.popularMBut').style.cssText = "border: 2px solid blue; color: blue;";
     document.querySelector('.LpriceBut').style.cssText = "border: 1px solid gray; color:black;";
     document.querySelector('.HLBodyBut').style.cssText = "border: 1px solid gray; color:black;";
     document.querySelector('.HLseats').style.cssText = "border: 1px solid gray; color:black;";
-
+    document.querySelector('.pulliTagTwo').style.display = "none";
 }
 
 
@@ -263,6 +265,7 @@ function HLprice(){
     document.querySelector('.LpriceBut').style.cssText = "border: 2px solid blue; color: blue;";
     document.querySelector('.HLBodyBut').style.cssText = "border: 1px solid gray; color:black;";
     document.querySelector('.HLseats').style.cssText = "border: 1px solid gray; color:black;";
+    document.querySelector('.pulliTagTwo').style.display = "none";
 
 }
 
@@ -281,6 +284,8 @@ function HLBody(){
     document.querySelector('.LpriceBut').style.cssText = "border: 1px solid gray; color:black;";
     document.querySelector('.HLBodyBut').style.cssText = "border: 2px solid blue; color: blue;";
     document.querySelector('.HLseats').style.cssText = "border: 1px solid gray; color:black;";
+    document.querySelector('.pulliTagTwo').style.display = "none";
+
 }
 
 function HLSeats(){
@@ -297,6 +302,7 @@ function HLSeats(){
     document.querySelector('.LpriceBut').style.cssText = "border: 1px solid gray; color:black;";
     document.querySelector('.HLBodyBut').style.cssText = "border: 1px solid gray; color:black;";
     document.querySelector('.HLseats').style.cssText = "border: 2px solid blue; color: blue;";
+    document.querySelector('.pulliTagTwo').style.display = "none";
 
 }
 
