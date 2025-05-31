@@ -1,4 +1,4 @@
-fetch('http://62.72.42.72:4015/images/get')
+fetch('http://207.244.228.247:4015/images/get')
 .then((response) => {
     if (response.ok) {
         return response.json();
@@ -104,7 +104,7 @@ fetch('http://62.72.42.72:4015/List/get')
 
 // Listing Page Start
 
-fetch('http://62.72.42.72:4015/BodyList/get')
+fetch('http://207.244.228.247:4015/BodyList/get')
     .then(response => response.json())
     .then(result => {
         let data = result.data;
